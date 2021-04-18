@@ -1,0 +1,48 @@
+<% blogs.forEach(b=>{ %><br>
+    <div class="l-box ">
+
+        <h2 class="content-head is-center ">
+            <i class="fa fa-check-square-o"></i>
+            <%=b.title %>
+        </h2>
+        <h4 class="blog floatr" >
+           ~ <%=b.wname %>
+        </h4 >
+            <h3 class="blog colo">
+             &nbsp;   <%=b.p1t %>
+            </h3>
+        <p>
+            <h4 class="blog">
+                <%=b.p1 %>
+            </h4>
+        </p>
+
+         <br>
+        </h4 >
+            <h3 class="blog colo">
+             &nbsp;   <%=b.p2t %>
+            </h3>
+        <p>
+            <h4 class="blog">
+                <%=b.p2 %>
+            </h4>
+        </p>
+        
+        
+    </div>
+    <a class="kalu" href="/blog/new672341/<%= b.id %>"> Share</a>
+    
+    <%if(admin){ %>
+    <form action="/blog/<%=b.id %>?_method=DELETE" method="POST">
+    <button type="submit" >delete </button>
+    </form>
+    <% }%>
+    <br>
+    
+    
+    <br>
+    <br>
+    <hr>
+    
+    
+<% }) %>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Its a blogging Website . where You can log youreself in and can make money">
+    <title>Blogging Webside &ndash; ~Dhruvajyoti Das &ndash; If you can't find the key smash the door</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" type="img/png" href="/favicon.png">
+    <script type="text/javascript" SRC="/picture-fall.js">
+    
+    </script>
+    <style>
+        .btn{
+            padding-left: 10px;
+            font-size: large;
+        }
+    </style>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="UZZmaSDI"></script>
+</head>
+<div id="fb-root"></div>
+
+
+<body>
+
+    <%- include ("./nav.ejs") %>
+        <% b=blogs %>
+            <div class="">
+                <div class="content">
+
+
+                    <div class="">
+                        <div class="l-box ">
+
+                            <h2 class="content-head is-center color3">
+                                <i class="fa fa-check-square-o"></i>
+                                <%=b.title %>
+                            </h2>
+                            <h4 class="blog floatr">
+                                ~ <%=b.wname %>
+                            </h4>
+                            <h3 class="blog colo">
+                                &nbsp; <%=b.p1t %>
+                            </h3>
+                            <p>
+                            <h4 class="blog">
+                                <%=b.p1 %>
+                            </h4>
+                            </p>
+
+                            <br>
+                            </h4>
+                            <h3 class="blog colo">
+                                &nbsp; <%=b.p2t %>
+                            </h3>
+                            <p>
+                            <h4 class="blog">
+                                <%=b.p2 %>
+                            </h4>
+                            </p>
+
+
+                        </div>
+
+                        <br>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+            <%  
+                s='https://localhost:3000/blog/new672341/' + para            
+            %>
+            <div class="fb-share-button"  data-href=<%= s %> data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            <% 
+            if( user){
+            %>
+             <a href="/blog/new672341/edit/<%=para %>" class="btn" >Edit</a>
+
+            <% }%>
+</body>
