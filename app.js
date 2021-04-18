@@ -2,7 +2,7 @@ let express = require('express')
 let override=require('method-override')
 let getrequest=require('./handler/request')
 let app=express()
-const port= process.env.port || 4000
+const port= process.env.PORT || 4000
 let mongoose=require('mongoose')
 app.use(override('_method'))
 app.use(express.urlencoded({extended:false}))
