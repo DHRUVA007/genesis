@@ -6,7 +6,7 @@ const port= process.env.port || 4000
 let mongoose=require('mongoose')
 app.use(override('_method'))
 app.use(express.urlencoded({extended:false}))
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/database',{ useNewUrlParser: true , useUnifiedTopology: true } )
+mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost/database',{ useNewUrlParser: true , useUnifiedTopology: true } )
 app.set('view engine','ejs')
 
 app.use(express.static('./assets',{maxAge:31536000 } ))
