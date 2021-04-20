@@ -10,12 +10,7 @@ mongoose.connect('mongodb+srv://Dhruva:godkiller57@cluster0.ko9i2.mongodb.net/my
 app.set('view engine','ejs')
 
 app.use(express.static('./assets',{maxAge:31536000 } ))
-app.get('/BingSiteAuth.xml',(req , res)=>{
-       
-    
-        
-        res.sendFile('BingSiteAuth.xml')
-    }
+
 app.use('/blog',getrequest.rout)
 getrequest.index(app)
 getrequest.About(app)
