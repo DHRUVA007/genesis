@@ -40,6 +40,9 @@ function About(app){
 rout.get('/',(req,res)=>{
 res.render('admin')
 })
+rout.get('/norteast',(req,res)=>{
+    res.render('norteast')
+    })
 rout.post('/',async (req,res)=>{
     
   try{ if(req.body.UserName ==="dhruva" && req.body.Password==="godkiller"){
