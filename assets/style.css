@@ -348,7 +348,7 @@ a.pure-button-primary {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
-@media (min-width: 78em) {.splash-container{ background-image : url( a.png);
+@media (min-width: 78em) {.splash-container{ background-image : url( a.jpg);
     height: 96vh;
 }
 
