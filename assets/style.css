@@ -146,9 +146,9 @@ a.pure-button-primary {
      white-space: nowrap;
     position: fixed;
     
-    z-index: 3;
+    z-index: 2;
     float :left;
-    background: #000;
+    
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
@@ -192,7 +192,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background-image : url( g2.png);
+    background-image : url( a.jpg);
 
     background-position: top;
    background-size: cover;
@@ -218,14 +218,14 @@ a.pure-button-primary {
 }
 
 /* This is the main heading that appears on the blue section */
-.splash-head {letter-spacing: .49em;
-    font-size: 20px;
-    font-weight: 900;
-    background-color: #000;
+.splash-head {letter-spacing: .59em;
+    font-size: 28px;
+    font-weight: bolder;
+    
     color: rgb(0, 174, 255);
-    border: 4px solid white;
-    border-radius: 1em;
-    padding: 1em 1.6em;
+    
+   
+    padding: 0.7em 1em;
     font-weight: 100;
     
     line-height: 1em;
